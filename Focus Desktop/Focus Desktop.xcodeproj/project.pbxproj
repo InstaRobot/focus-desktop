@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50FDFE4224895332009BFE79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FDFE4124895332009BFE79 /* AppDelegate.swift */; };
+		50FDFE4424895333009BFE79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50FDFE4324895333009BFE79 /* Assets.xcassets */; };
+		50FDFE4724895333009BFE79 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50FDFE4524895333009BFE79 /* MainMenu.xib */; };
+		50FDFE55248953CB009BFE79 /* NSEventModifierFlags+HotKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FDFE50248953CB009BFE79 /* NSEventModifierFlags+HotKey.swift */; };
+		50FDFE56248953CB009BFE79 /* KeyCombo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FDFE51248953CB009BFE79 /* KeyCombo.swift */; };
+		50FDFE57248953CB009BFE79 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FDFE52248953CB009BFE79 /* Key.swift */; };
+		50FDFE58248953CB009BFE79 /* HotKeysController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FDFE53248953CB009BFE79 /* HotKeysController.swift */; };
+		50FDFE59248953CB009BFE79 /* HotKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FDFE54248953CB009BFE79 /* HotKey.swift */; };
+		50FDFE5B248953DD009BFE79 /* AppleScriptExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FDFE5A248953DD009BFE79 /* AppleScriptExecutor.swift */; };
+		50FDFE62248953EC009BFE79 /* desktopStatus.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 50FDFE5F248953EC009BFE79 /* desktopStatus.scpt */; };
+		50FDFE63248953EC009BFE79 /* changeState.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 50FDFE60248953EC009BFE79 /* changeState.scpt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		50FDFE3E24895332009BFE79 /* Focus Desktop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Focus Desktop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50FDFE4124895332009BFE79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50FDFE4324895333009BFE79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50FDFE4624895333009BFE79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		50FDFE4824895333009BFE79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50FDFE4924895333009BFE79 /* Focus_Desktop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Focus_Desktop.entitlements; sourceTree = "<group>"; };
+		50FDFE50248953CB009BFE79 /* NSEventModifierFlags+HotKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSEventModifierFlags+HotKey.swift"; sourceTree = "<group>"; };
+		50FDFE51248953CB009BFE79 /* KeyCombo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyCombo.swift; sourceTree = "<group>"; };
+		50FDFE52248953CB009BFE79 /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		50FDFE53248953CB009BFE79 /* HotKeysController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotKeysController.swift; sourceTree = "<group>"; };
+		50FDFE54248953CB009BFE79 /* HotKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotKey.swift; sourceTree = "<group>"; };
+		50FDFE5A248953DD009BFE79 /* AppleScriptExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleScriptExecutor.swift; sourceTree = "<group>"; };
+		50FDFE5F248953EC009BFE79 /* desktopStatus.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = desktopStatus.scpt; sourceTree = "<group>"; };
+		50FDFE60248953EC009BFE79 /* changeState.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = changeState.scpt; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50FDFE3B24895332009BFE79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50F98722248BD6B400686238 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				50FDFE5A248953DD009BFE79 /* AppleScriptExecutor.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		50FDFE3524895332009BFE79 = {
+			isa = PBXGroup;
+			children = (
+				50FDFE4024895332009BFE79 /* Focus Desktop */,
+				50FDFE3F24895332009BFE79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50FDFE3F24895332009BFE79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50FDFE3E24895332009BFE79 /* Focus Desktop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50FDFE4024895332009BFE79 /* Focus Desktop */ = {
+			isa = PBXGroup;
+			children = (
+				50FDFE4124895332009BFE79 /* AppDelegate.swift */,
+				50FDFE4824895333009BFE79 /* Info.plist */,
+				50FDFE4924895333009BFE79 /* Focus_Desktop.entitlements */,
+				50F98722248BD6B400686238 /* Helpers */,
+				50FDFE64248981F6009BFE79 /* LIBs */,
+				50FDFE5C248953EC009BFE79 /* Resources */,
+			);
+			path = "Focus Desktop";
+			sourceTree = "<group>";
+		};
+		50FDFE4F248953CB009BFE79 /* HotKey */ = {
+			isa = PBXGroup;
+			children = (
+				50FDFE50248953CB009BFE79 /* NSEventModifierFlags+HotKey.swift */,
+				50FDFE51248953CB009BFE79 /* KeyCombo.swift */,
+				50FDFE52248953CB009BFE79 /* Key.swift */,
+				50FDFE53248953CB009BFE79 /* HotKeysController.swift */,
+				50FDFE54248953CB009BFE79 /* HotKey.swift */,
+			);
+			path = HotKey;
+			sourceTree = "<group>";
+		};
+		50FDFE5C248953EC009BFE79 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				50FDFE4524895333009BFE79 /* MainMenu.xib */,
+				50FDFE4324895333009BFE79 /* Assets.xcassets */,
+				50FDFE5F248953EC009BFE79 /* desktopStatus.scpt */,
+				50FDFE60248953EC009BFE79 /* changeState.scpt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		50FDFE64248981F6009BFE79 /* LIBs */ = {
+			isa = PBXGroup;
+			children = (
+				50FDFE4F248953CB009BFE79 /* HotKey */,
+			);
+			path = LIBs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50FDFE3D24895332009BFE79 /* Focus Desktop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50FDFE4C24895333009BFE79 /* Build configuration list for PBXNativeTarget "Focus Desktop" */;
+			buildPhases = (
+				50FDFE3A24895332009BFE79 /* Sources */,
+				50FDFE3B24895332009BFE79 /* Frameworks */,
+				50FDFE3C24895332009BFE79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Focus Desktop";
+			productName = "Focus Desktop";
+			productReference = 50FDFE3E24895332009BFE79 /* Focus Desktop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50FDFE3624895332009BFE79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "DEVLAB Studio LLC";
+				TargetAttributes = {
+					50FDFE3D24895332009BFE79 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = 50FDFE3924895332009BFE79 /* Build configuration list for PBXProject "Focus Desktop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50FDFE3524895332009BFE79;
+			productRefGroup = 50FDFE3F24895332009BFE79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50FDFE3D24895332009BFE79 /* Focus Desktop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50FDFE3C24895332009BFE79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FDFE63248953EC009BFE79 /* changeState.scpt in Resources */,
+				50FDFE62248953EC009BFE79 /* desktopStatus.scpt in Resources */,
+				50FDFE4424895333009BFE79 /* Assets.xcassets in Resources */,
+				50FDFE4724895333009BFE79 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50FDFE3A24895332009BFE79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FDFE58248953CB009BFE79 /* HotKeysController.swift in Sources */,
+				50FDFE55248953CB009BFE79 /* NSEventModifierFlags+HotKey.swift in Sources */,
+				50FDFE57248953CB009BFE79 /* Key.swift in Sources */,
+				50FDFE56248953CB009BFE79 /* KeyCombo.swift in Sources */,
+				50FDFE5B248953DD009BFE79 /* AppleScriptExecutor.swift in Sources */,
+				50FDFE4224895332009BFE79 /* AppDelegate.swift in Sources */,
+				50FDFE59248953CB009BFE79 /* HotKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		50FDFE4524895333009BFE79 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50FDFE4624895333009BFE79 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50FDFE4A24895333009BFE79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50FDFE4B24895333009BFE79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		50FDFE4D24895333009BFE79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Focus Desktop/Focus_Desktop.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Focus Desktop/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "studio.devlab.Focus-Desktop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		50FDFE4E24895333009BFE79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Focus Desktop/Focus_Desktop.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Focus Desktop/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "studio.devlab.Focus-Desktop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50FDFE3924895332009BFE79 /* Build configuration list for PBXProject "Focus Desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50FDFE4A24895333009BFE79 /* Debug */,
+				50FDFE4B24895333009BFE79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50FDFE4C24895333009BFE79 /* Build configuration list for PBXNativeTarget "Focus Desktop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50FDFE4D24895333009BFE79 /* Debug */,
+				50FDFE4E24895333009BFE79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50FDFE3624895332009BFE79 /* Project object */;
+}
