@@ -9,7 +9,6 @@
 import Foundation
 
 struct AppleScriptExecutor {
-    
     @discardableResult
     func runScript(scriptName: String?, keyParams: [String: String] = [:], bundle: Bundle = Bundle.main) -> (success: Bool, error: NSDictionary?) {
         guard
@@ -37,5 +36,4 @@ struct AppleScriptExecutor {
         }
         return (false, error)
     }
-
 }
